@@ -115,13 +115,10 @@ class UserController extends Controller
             return response()->json(['message' => 'Invalid credentials'], 401);
         }
 
-        // Optionally, you can generate a token here if using Sanctum/Passport
-        // $token = $user->createToken('auth_token')->plainTextToken;
 
         return response()->json([
             'message' => 'Login successful',
             'user' => $user,
-            // 'token' => $token, // Uncomment if using token
         ]);
     }
 }
