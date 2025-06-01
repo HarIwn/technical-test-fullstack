@@ -5,7 +5,7 @@ const LoginPage = () => {
     const [password, setPassword] = React.useState('');
     const [errors, setErrors] = React.useState({});
     const [redirect, setRedirect] = React.useState(false);
-        // Validasi ke database users (dummy fetch, ganti dengan API sesuai backend Anda)
+        // Validasi ke database users
         const validate = async () => {
             const newErrors = {};
             if (!email) {
@@ -52,7 +52,6 @@ const LoginPage = () => {
                 <div className="card o-hidden border-0 shadow-lg my-5">
                     <div className="card-body p-0">
                     <div className="row">
-                        {/* Hide image on xs/sm, show on md+ */}
                         <div className="d-none d-md-block col-md-5 col-lg-6 bg-login-image"></div>
                         <div className="col-12 col-md-7 col-lg-6">
                         <div className="p-4 p-md-5">
